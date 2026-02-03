@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+      
+.footer {
+  background: #eef5f4;
+  padding: 60px 40px 20px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form label {
+  font-size: 14px;
+}
+
+.newsletter-form span {
+  color: red;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  background: transparent;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.policy-links {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-links li {
+  margin-bottom: 10px;
+}
+
+.policy-links a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #000;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h3>KEEP UPDATED ON OUR LATEST<br>THERAPIES</h3>
+
+      <form class="newsletter-form">
+        <label>Email <span>*</span></label>
+        <input type="email" placeholder="" required>
+
+        <div class="checkbox">
+          <input type="checkbox" id="subscribe">
+          <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>CONTACT</h3>
+      <p><strong>Opening Hours:</strong></p>
+      <p>Monday to Sunday</p>
+      <p>10:00 am – 11:00 pm</p>
+      <p>9217817820</p>
+      <p>theorryspa@gmail.com</p>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-col">
+      <h3>POLICIES</h3>
+      <ul class="policy-links">
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom line -->
+  <div class="footer-bottom">
+    <p>
+      The Orry – Luxury Spa & Wellness Studio Address :
+      3rd Floor, Preet Vihar, G 20, East, Preet Vihar, Delhi, 110092 |
+      Contact : 9217817820
+    </p>
+  </div>
+</footer>
+</body>
+</html>

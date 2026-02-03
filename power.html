@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power of Massage</title>
+    <link rel="stylesheet" href="fixed-icon.css">
+    <style>
+.power-head {
+    background-color: #EEF6F7; 
+    padding: 24px 0px;
+    display: flex;
+    justify-content:end; 
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 30px;
+    width:100%;
+    height: 10px;
+}
+.power-head nav {
+    display: flex;
+    gap: 30px; 
+}
+.power-head nav a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.power-head nav a:hover {
+    color:#000;
+    transform: scale(1.05);
+}
+@media (max-width: 1200px) {
+  .power-head {
+    padding: 20px 0;
+  }
+
+  .power-head nav a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 992px) {
+  .power-head {
+    justify-content: center;
+    height: auto;
+    padding: 18px 0;
+  }
+
+  .power-head nav {
+    gap: 24px;
+  }
+
+  .power-head nav a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .power-head {
+    padding: 16px 14px;
+    border-radius: 20px;
+  }
+
+  .power-head nav {
+    gap: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .power-head nav::-webkit-scrollbar {
+    display: none; /* Chrome / Safari */
+  }
+
+  .power-head nav a {
+    font-size: 15px;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .power-head nav {
+    gap: 12px;
+  }
+
+  .power-head nav a {
+    font-size: 14px;
+  }
+}
+
+body{
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+    background-color: #fff;
+    color: #1f2937;
+}
+.blog-container{
+    max-width: 720px;      
+    margin: 0 auto;        
+    padding: 60px 20px;
+}
+.blog-meta{
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+.blog-author{
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.blog-author .brand{
+    font-weight: 600;
+    color: #111827;
+}
+.blog-title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+.blog-container p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 22px;
+}
+@media (max-width: 1200px) {
+  .blog-container {
+    padding: 50px 24px;
+  }
+
+  .blog-title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 992px) {
+  .blog-container {
+    max-width: 680px;
+    padding: 44px 22px;
+  }
+
+  .blog-title {
+    font-size: 30px;
+  }
+
+  .blog-container p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+}
+@media (max-width: 768px) {
+  .blog-container {
+    max-width: 100%;
+    padding: 36px 18px;
+  }
+
+  .blog-title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .blog-meta,
+  .blog-author {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .blog-container p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 480px) {
+  .blog-container {
+    padding: 30px 16px;
+  }
+
+  .blog-title {
+    font-size: 22px;
+  }
+
+  .blog-container p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+}
+
+.card-p{
+    margin: 0 auto;            
+    padding: 40px 0px;
+    max-width: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.cards-c{
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.cards-c:hover{
+    transform: translateY(-6px);
+}
+.cards-c img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.card-content hr{
+    border: none;
+    height: 1px;
+    background: #e5e7eb;
+    margin: 10px 0;
+}
+.card-icons{
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #6b7280;
+}
+@media (max-width: 1200px) {
+  .card-p {
+    max-width: 100%;
+    padding: 40px 24px;
+    gap: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .card-p {
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .cards-c {
+    max-width: 360px;
+  }
+
+  .cards-c img {
+    height: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .card-p {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 18px;
+    gap: 24px;
+  }
+
+  .cards-c {
+    max-width: 100%;
+  }
+
+  .cards-c img {
+    height: 200px;
+  }
+
+  .card-content h3 {
+    font-size: 15px;
+  }
+
+  .card-icons {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .card-p {
+    padding: 24px 16px;
+  }
+
+  .cards-c img {
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 14px;
+  }
+
+  .card-content h3 {
+    font-size: 14px;
+  }
+}
+.footer {
+  background: #eef5f4;
+  padding: 60px 40px 20px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form label {
+  font-size: 14px;
+}
+
+.newsletter-form span {
+  color: red;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  background: transparent;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.policy-links {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-links li {
+  margin-bottom: 10px;
+}
+
+.policy-links a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #000;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+
+</style>
+</head>
+<body>
+    <header class="power-head">
+        <div class="power-head">
+            <nav class="power-head">
+            <a href="/" target="_blank"> Home</a>
+            <a href="Therepies" target="_blank">Therepies</a>
+            <a href="aboutus.html"  target="_blank">About us</a>
+            </nav>
+        </div>
+    </header>
+    <div class="blog-container">
+
+        <p class="blog-meta">All Posts</p>
+
+        <p class="blog-author">
+            <span class="brand">The Orry</span> · 20 hours ago · 1 min read
+        </p>
+
+        <h1 class="blog-title">
+            The Power of Massage Therapy in Reducing Everyday Stress
+        </h1>
+
+        <p>
+            In today’s fast-paced lifestyle, stress has become a constant companion. Massage therapy is one of the most effective and natural ways to manage this stress and restore balance.
+        </p>
+
+        <p>
+            Massage works by relaxing tense muscles, improving blood circulation, and calming the nervous system.
+        </p>
+
+        <p>
+            At The Orry Spa, our relaxation therapies are designed to help you disconnect from external pressures.
+        </p>
+
+        <p>
+            Regular massage therapy improves sleep quality, boosts immunity, and enhances overall well-being.
+        </p>
+
+        <p>
+            Aromatherapy is not just a massage—it’s a sensory journey toward calm and balance.
+        </p>
+    </div>
+    </div>
+    <div class="card-p">
+    <div class="cards-c">
+    <a href="aroma.html" target="_blank">
+    <img src="https://theorryspa.com/assets/blog-1-Cijjl5qX.avif" alt="">
+    </a>
+    <div class="card-content">
+      <h3>Benefits Of Aromatherapy for Mind and <br>Body<</h3>
+      <hr>
+      <div class="card-icons">
+        <span>👁 5</span>
+        <span>💬 0</span>
+      </div>
+    </div>
+  </div>
+   <div class="cards-c">
+    <a href="swedish.html" target="_blank">
+    <img src="https://theorryspa.com/assets/blog-2-ckEpwa6j.avif" alt="">
+    </a>
+    <div class="card-content">
+      <h3>Swedish vs Deep Tissue Massage – Which One Is Right for You?</h3>
+      <hr>
+      <div class="card-icons">
+        <span>👁 10</span>
+        <span>💬 0</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h3>KEEP UPDATED ON OUR LATEST<br>THERAPIES</h3>
+
+      <form class="newsletter-form">
+        <label>Email <span>*</span></label>
+        <input type="email" placeholder="" required>
+
+        <div class="checkbox">
+          <input type="checkbox" id="subscribe">
+          <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h3>CONTACT</h3>
+      <p><strong>Opening Hours:</strong></p>
+      <p>Monday to Sunday</p>
+      <p>10:00 am – 11:00 pm</p>
+      <p>9217817820</p>
+      <p>theorryspa@gmail.com</p>
+    </div>
+
+    <!-- Policies -->
+    <div class="footer-col">
+      <h3>POLICIES</h3>
+      <ul class="policy-links">
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom line -->
+  <div class="footer-bottom">
+    <p>
+      The Orry – Luxury Spa & Wellness Studio Address :
+      3rd Floor, Preet Vihar, G 20, East, Preet Vihar, Delhi, 110092 |
+      Contact : 9217817820
+    </p>
+  </div>
+</footer>
+
+<div class="social-container" id="socialContainer">
+      <!-- WhatsApp link -->
+  <div class="social-link">
+    <a href="https://wa.me/1234567890" target="_blank">
+      <!-- WhatsApp SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+    </a>
+  </div>
+
+  <!-- Phone link -->
+  <div class="social-link">
+    <a href="tel:+1234567890">
+      <!-- Phone SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+    </a>
+  </div>
+
+  <!-- Close button -->
+  <div class="close-btn" id="closeBtn">
+    <!-- Close SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg>
+  </div>
+  <!-- Main button -->
+  <div class="social-btn" id="mainBtn">
+    <!-- Phone SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-quote-fill" viewBox="0 0 16 16">
+  <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M7.194 6.766a1.7 1.7 0 0 0-.227-.272 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.5 2.5 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.5 2.5 0 0 0-.228-.4 1.7 1.7 0 0 0-.227-.273 1.5 1.5 0 0 0-.469-.324l-.008-.004A1.8 1.8 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+</svg>
+
+  </div>
+</div>
+<script src="fixed-icons.js"></script>
+</body>
+</html>
+</body>
+</html>
