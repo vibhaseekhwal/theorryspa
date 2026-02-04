@@ -9,8 +9,10 @@
   z-index: 1000;
 }
 
-/* Main button and icons */
-.social-btn, .social-link, .close-btn {
+/* Common button style */
+.social-btn,
+.social-link,
+.close-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -18,59 +20,64 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  box-sizing: border-box;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* Main open button */
 .social-btn {
   background: #b48ad6;
-  color: white;
+  color: #fff;
 }
 
 /* Social links */
 .social-link {
   background: #1ed760;
   border: 1px solid #1ed760;
-  color: white;
   opacity: 0;
-  transform: translateX(60px) scale(1);
+  transform: translateX(60px);
   pointer-events: none;
 }
 
-.social-link svg {
-  color: white;
-}
-
+/* Anchor full clickable */
 .social-link a {
-  display: flex;
   width: 100%;
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SVG fix */
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  pointer-events: none;
 }
 
 /* Close button */
 .close-btn {
   background: #b48ad6;
-  color: white;
+  color: #fff;
   opacity: 0;
-  transform: translateX(60px) scale(1);
+  transform: translateX(60px);
   pointer-events: none;
 }
 
-/* When active, show social links */
+/* Active state */
 .social-container.active .social-link,
 .social-container.active .close-btn {
   opacity: 1;
-  transform: translateX(0) scale(1);
+  transform: translateX(0);
   pointer-events: auto;
 }
 
-/* 🔥 Hover Zoom Effect */
-.social-btn:hover {
-  transform: scale(1.15);
-}
-
+/* Hover zoom effect */
+.social-btn:hover,
 .social-container.active .social-link:hover,
 .social-container.active .close-btn:hover {
-  transform: translateX(0) scale(1.15);
+  transform: scale(1.15);
 }
